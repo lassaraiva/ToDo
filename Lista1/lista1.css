@@ -166,7 +166,7 @@ tr:nth-child(even) {
     padding: 4px;
 }
 .container {
-  margin-left: 6px;
+  margin-left: 5px;
 
 }
 .delete-toDo-button{
@@ -192,24 +192,21 @@ tr:nth-child(even) {
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px; 
+    padding: 8px; 
     width: 100%;
   }
-  
   nav .menu {
-    display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
-    list-style: none;
+    position: fixed;
+    left: 0;
   }
-  
   nav .menu li {
     margin: 0 1px;
     text-align: center;
   }
   nav .menu li a {
     font-size: 14px;
-  } 
+  }
 }
