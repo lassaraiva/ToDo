@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDo</title>  
+  <link href="Lista3/lista3.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+  <ul class="menu">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="lista1.html">ToDo List</a></li>
+    <li><a href="lista2.html">Appointment List</a></li>
+  </ul>
+</nav>
+  <form id="form">
+    <h2>Shopping List</h2>
+    <input type="text" id="nomeOuCodigo" placeholder="Item's name or Barcode" required />
+    <input type="text" id="preco" placeholder="Price(0.00)" required />
+    <input type="text" id="quantidade" placeholder="Quantity" required />
+    <button type="submit">Add</button>
+  </form>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Cost</th>
+        <th>Qty</th>
+        <th>Total($)</th>
+        <th>Checked</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="lista"></tbody>
+  </table>
+  <script src="Lista3/lista3.js"></script>
+</body>
+</html>

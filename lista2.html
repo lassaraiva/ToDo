@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ToDo</title>
+  <link href="Lista2/lista2.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="lista1.html">ToDo List</a></li>
+      <li><a href="lista3.html">Shopping List</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h2>Appointment List</h2>
+    <input type="text" class="nome-input" placeholder="Event name">
+    <input type="datetime-local" class="data-hora-input">
+    <button class="botao-adicionar">Add</button>
+    <table class="lista-de-eventos">
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>When</th>
+          <th>Time</th>
+          <th>Done</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <script src="Lista2/lista2.js"></script>
+</body>
+</html>
