@@ -1,45 +1,22 @@
 body {
-  font-family: 'Roboto', Arial, sans-serif;
-  background-color: rgb(244,254,129);
+  font-family: 'Raleway', Arial, sans-serif; 
+  background: linear-gradient(to bottom, rgb(255, 255, 153), rgb(253, 253, 60) 50%, rgb(255, 255, 153));
   margin: 0;
   padding: 5% 15%;
 }
 
-nav {
-  display: flex;
-  height: 40px;
-  width: 100%;
-  align-items: left;
-  justify-content: space-between;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 2;
-}
-nav .menu {
-  display: flex;
-  flex-wrap: wrap;
+ a {
   list-style: none;
-  margin: 0 15px;
-}
-
-nav .menu li {
-  margin: 0 15px;
-}
-
-nav .menu li a {
-  color: rgb(119, 119, 119);
   text-decoration: none;
-  font-size: 18px;
-  padding: 8px 15px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  font-weight: 500;
+  color: rgb(250, 208, 39);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  margin-left: 20%;
 }
-nav .menu li a.active,
-nav .menu li a:hover {
-  border-bottom: 3px solid rgb(248, 218, 49);
-  border-radius: 0;
+ a:hover {
+  color: rgb(207, 172, 32);
 }
 
 h2 {
@@ -55,7 +32,7 @@ h2 {
   margin: 20px auto;
   background-color:rgb(255, 255, 255);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
@@ -65,12 +42,11 @@ h2 {
   padding: 15px;
   margin-bottom: 15px;
   border:1px solid rgb(245, 222, 17);
-  border-radius: 5px;
+  border-radius: 20px;
   font-size: 16px;
   box-sizing: border-box;
   transition: border-color 0.3s;
 }
-
 input::placeholder {
   color: #999;
 }
@@ -82,13 +58,12 @@ button {
   font-weight: bold;
   padding: 8px 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
   width: calc(30% - 10px);
   box-sizing: border-box;
 }
-
 button:hover {
   background-color: rgb(202, 188, 59);
 }
@@ -100,113 +75,72 @@ button:hover {
   background-color: rgb(226, 16, 26);
 }
 
+.toDo-list {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 table {
   width: 100%;
   margin: 20px 0;
   border-collapse: collapse;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
-
 th, td {
   padding: 12px;
-  border:1px solid rgb(244,254,129);
+  border:none;
   text-align: center;
-  box-sizing: border-box;
   font-size: 18px;
   color: rgb(119, 119, 119);
 }
 
 th {
-  background-color: rgb(226,168,255);
+  background-color: rgb(245, 52, 197);
   color: rgb(255, 255, 255);
   padding: 15px;
 }
-
 tr:nth-child(odd) {
-  background-color: rgb(252,238,255);
+  background-color: rgb(255, 238, 250);
 }
 
 tr:nth-child(even) {
-  background-color: rgb(241,214,255); 
+  background-color: rgb(255, 214, 246); 
 }
 
-@media (max-width: 1100px) {
-  body {
-      padding: 5% 5%;
-  }
-
-  button {
+@media (max-width: 910px) {
+body {
+    padding: 5% 2%;
+}
+button {
     width: 40%;
-    padding: 4px;
+    padding: 6px;
 }
 .container {
-  margin-left: 55px;
-}
-.delete-toDo-button{
-  width: 32%;
-  padding: 5px;
-}
-  table {
-      font-size: 14px;
-  }
-
-  h1 {
-      font-size: 2em;
-  }
-
-}
-
-@media (max-width: 480px) {
-  body {
-      padding: 5% 2%;
-  }
-  button {
-    width: 40%;
-    padding: 4px;
-}
-.container {
-  margin-left: 5px;
-
+  margin-left: 0px;
 }
 .delete-toDo-button{
   width: 32%;
   padding: 5px;
 }
 
-  h1 {
-      font-size: 1.8em;
-  }
+h1 {
+  font-size: 1.5em;
+}
 
-  table {
-      font-size: 16px;
-  }
+table {
+  font-size: 16px;
+}
   
-  th, td {
-      padding: 6px;
-  }
-  th{
-    padding: 15px;
-    font-size: 16px;
-  }
-  nav {
-    display: flex;
-    align-items: center;
-    padding: 8px; 
-    width: 100%;
-  }
-  nav .menu {
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    left: 0;
-  }
-  nav .menu li {
-    margin: 0 1px;
-    text-align: center;
-  }
-  nav .menu li a {
-    font-size: 14px;
-  }
+th, td {
+  padding: 6px;
+  font-size: 16px;
+}
+th{
+  padding: 15px;
+  font-size: 16px;
+}
+a {
+  font-size: 40px;
+  margin-left: 10%;
+}
 }

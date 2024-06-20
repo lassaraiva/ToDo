@@ -4,17 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ToDo</title>  
-  <link href="Lista3/lista3.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
+  <link href="Lista3/lista3.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap">
 <body>
-  <nav>
-  <ul class="menu">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="lista1.html">ToDo List</a></li>
-    <li><a href="lista2.html">Appointment List</a></li>
-  </ul>
-</nav>
+  <a href="index.html"><i class="fas fa-home"></i></a>
   <form id="form">
     <h2>Shopping List</h2>
     <input type="text" id="nomeOuCodigo" placeholder="Item's name or Barcode" required />
@@ -22,7 +16,7 @@
     <input type="text" id="quantidade" placeholder="Quantity" required />
     <button type="submit">Add</button>
   </form>
-  <table>
+  <table class="Shopping-list">
     <thead>
       <tr>
         <th>Item</th>
